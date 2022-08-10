@@ -39,21 +39,34 @@
 #endregion
 
 #region diagonalDifference
-int n = Convert.ToInt32(Console.ReadLine().Trim());
-
-List<List<int>> arr = new List<List<int>>();
-
-for (int i = 0; i < n; i++)
-{
-    arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
-}
-
-int result = DiagonalDifference.Result(arr);
-
-Console.WriteLine(result);
+// int n = Convert.ToInt32(Console.ReadLine().Trim());
+//
+// List<List<int>> arr = new List<List<int>>();
+//
+// for (int i = 0; i < n; i++)
+// {
+//     arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
+// }
+//
+// int result = DiagonalDifference.Result(arr);
+//
+// Console.WriteLine(result);
 
 #endregion
 
-#region MyRegion
+#region plusMinus
+// int n = Convert.ToInt32(Console.ReadLine().Trim());
+//
+// List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+//
+// PlusMinus.Result(arr);
+
+#endregion
+
+#region Staircase
+
+int n = Convert.ToInt32(Console.ReadLine().Trim());
+
+Staircase.Result(n);
 
 #endregion
