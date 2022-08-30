@@ -113,45 +113,61 @@
 #endregion
 
 #region GradingStudents
-int gradesCount = Convert.ToInt32(Console.ReadLine().Trim());
-
-List<int> grades = new List<int>();
-
-for (int i = 0; i < gradesCount; i++)
-{
-    int gradesItem = Convert.ToInt32(Console.ReadLine().Trim());
-    grades.Add(gradesItem);
-}
-
-List<int> result = GradingStudents.Result(grades);
-
-Console.WriteLine(String.Join("\n", result));
+// int gradesCount = Convert.ToInt32(Console.ReadLine().Trim());
+//
+// List<int> grades = new List<int>();
+//
+// for (int i = 0; i < gradesCount; i++)
+// {
+//     int gradesItem = Convert.ToInt32(Console.ReadLine().Trim());
+//     grades.Add(gradesItem);
+// }
+//
+// List<int> result = GradingStudents.Result(grades);
+//
+// Console.WriteLine(String.Join("\n", result));
 #endregion
 
 #region CountApplesAndOranges
+// string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+//
+// int s = Convert.ToInt32(firstMultipleInput[0]);
+//
+// int t = Convert.ToInt32(firstMultipleInput[1]);
+//
+// string[] secondMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+//
+// int a = Convert.ToInt32(secondMultipleInput[0]);
+//
+// int b = Convert.ToInt32(secondMultipleInput[1]);
+//
+// string[] thirdMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+//
+// int m = Convert.ToInt32(thirdMultipleInput[0]);
+//
+// int n = Convert.ToInt32(thirdMultipleInput[1]);
+//
+// List<int> apples = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(applesTemp => Convert.ToInt32(applesTemp)).ToList();
+//
+// List<int> oranges = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(orangesTemp => Convert.ToInt32(orangesTemp)).ToList();
+//
+// CountApplesAndOranges.Result(s, t, a, b, apples, oranges);
+
+
+#endregion
+
+#region Kangaroo
 string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
 
-int s = Convert.ToInt32(firstMultipleInput[0]);
+int x1 = Convert.ToInt32(firstMultipleInput[0]);
 
-int t = Convert.ToInt32(firstMultipleInput[1]);
+int v1 = Convert.ToInt32(firstMultipleInput[1]);
 
-string[] secondMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+int x2 = Convert.ToInt32(firstMultipleInput[2]);
 
-int a = Convert.ToInt32(secondMultipleInput[0]);
+int v2 = Convert.ToInt32(firstMultipleInput[3]);
 
-int b = Convert.ToInt32(secondMultipleInput[1]);
+string result = Kangaroo.Result(x1, v1, x2, v2);
 
-string[] thirdMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
-
-int m = Convert.ToInt32(thirdMultipleInput[0]);
-
-int n = Convert.ToInt32(thirdMultipleInput[1]);
-
-List<int> apples = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(applesTemp => Convert.ToInt32(applesTemp)).ToList();
-
-List<int> oranges = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(orangesTemp => Convert.ToInt32(orangesTemp)).ToList();
-
-CountApplesAndOranges.Result(s, t, a, b, apples, oranges);
-
-
+Console.WriteLine(result);
 #endregion
